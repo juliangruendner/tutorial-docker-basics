@@ -1,0 +1,6 @@
+services:
+    example-docker-2:
+        build: .
+        # entrypoint: bash -c "tail -f /dev/null"
+        environment:
+            - MESSAGE_TO_PRINT=${DOCKER_TUT_MESSAGE_TO_PRINT}

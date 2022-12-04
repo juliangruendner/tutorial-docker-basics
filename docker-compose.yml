@@ -1,0 +1,8 @@
+services:
+    example-docker-1:
+        image: ubuntu:18.04
+        entrypoint: bash -c "tail -f /dev/null"
+        environment:
+            - URL_TO_CALL=${DOCKER_TUT_URL_TO_CALL}
+        volumes:
+            - ./my-test-script.sh:/test-script.sh
